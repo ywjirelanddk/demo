@@ -34,7 +34,7 @@ namespace WebApiDemo.Controllers
 
         // GET: api/Users/5
         [HttpGet("{id}", Name = "Get")]
-        public IActionResult Get([FromBody] int id)
+        public IActionResult Get(int id)
         {
             var user = _userService.GetById(id);
 
